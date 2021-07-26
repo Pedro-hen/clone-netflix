@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--owl CSS-->
+    <link rel="stylesheet" href="style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/Owl/owl.theme.default.min.css">
+
+    <!--Reponsive CSS-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Nada pode impedir o politíco sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+                <div class="botoes">
+                    <button onclick="info.redirect()" role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button onclick="info.open()" role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme " src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme " src="img/mini10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-info active">
+        <div class="box">
+            <div class="infor1">
+                <h2 class="logo-titulo">HOUSE OF CARDS</h2>
+                <i onclick="info.close()" class="far fa-times-circle close"></i>
+            </div>
+            <div class="descricao-serie">
+                <h2 >Assista à temporada 1 agora</h2>
+                <p>Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+            </div>
+            <div class="elenco-desc">
+                <p>Elenco: Robin Wright, Michael Kelly, Kevin Spacey, Jayne Atkinson, Derek Cecil ...</p>
+            </div>
+            <div class="box-episodio">
+                Classificar este título
+                temporada 1:E1
+                Episodios e mais
+                Idioma e legendas
+                + Adicionar à Minha lista
+            </div>
+        </div>
+    </div>
+    <script>
+        info = {
+            open(){
+                document.querySelector('.container-info').classList.add('active')
+            },
+            close(){
+                document.querySelector('.container-info').classList.remove('active')
+            },
+            redirect(){
+                window.open('https://www.youtube.com/watch?v=8QnMmpfKWvo')
+            }
+        }
+    </script>
+    
+    <script src="https://kit.fontawesome.com/647ff7a4d0.js" crossorigin="anonymous"></script>
+    <script src="js/Owl/jquery.min.js"></script>
+    <script src="js/Owl/owl.carousel.min.js"></script>
+    <script src="js/Owl/main.js"></script>
+</body>
+</html>

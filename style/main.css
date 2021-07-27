@@ -59,7 +59,7 @@ header nav a:hover {
 }
 
 .filme-principal .titulo {
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
@@ -103,9 +103,9 @@ header nav a:hover {
 }
 
 /* Caixa mais informações*/
-.container-info{
+.container-info {
     width: 100%;
-    height: 100%;
+    height: 880px;
 
     background-color: rgba(0,0,0,0.7);
     position: absolute;
@@ -127,33 +127,12 @@ header nav a:hover {
 }
 
 .box {
-    background: #F0F2f5;
-    height: 400px;
-
+    height: 500px;
     width: 90%;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/capa-hoc.jpg);
     background-size: cover;
+    background-color: black;
 }
-
-.infor1{
-    display: flex;
-    justify-content: space-between;
-
-    border: 1px solid black;
-}
-
-.descricao-serie {
-    border: 1px solid black;
-}
-
-.elenco-desc{
-    border: 1px solid black;
-}
-
-.box-episodio {
-    border: 1px solid black;
-}
-
-i{
-    cursor: pointer;
+.box iframe {
+    width: 100%;
+    height: 100%;
 }

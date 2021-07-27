@@ -33,11 +33,11 @@
                 <h3 class="titulo">HOUSE OF CARDS</h3>
                 <p class="descricao">Nada pode impedir o politíco sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
                 <div class="botoes">
-                    <button onclick="info.redirect()" role="button" class="botao">
+                    <button onclick="info.open()" role="button" class="botao">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button onclick="info.open()" role="button" class="botao">
+                    <button onclick="info.notification()" role="button" class="botao">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -81,26 +81,44 @@
         </div>
     </div>
 
-    <div class="container-info active">
+    <div onclick="info.close()" class="container-info">
         <div class="box">
-            <div class="infor1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8QnMmpfKWvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<div class="infor1">
                 <h2 class="logo-titulo">HOUSE OF CARDS</h2>
                 <i onclick="info.close()" class="far fa-times-circle close"></i>
             </div>
+            <div class="temp">
+                <h3>Assista à temporada 1 agora</h3>
+            </div>
             <div class="descricao-serie">
-                <h2 >Assista à temporada 1 agora</h2>
                 <p>Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
             </div>
             <div class="elenco-desc">
-                <p>Elenco: Robin Wright, Michael Kelly, Kevin Spacey, Jayne Atkinson, Derek Cecil ...</p>
+                <p>Elenco: Robin Wright, Michael Kelly, Kevin Spacey, Jayne Atkinson, Derek Cecil.</p>
             </div>
             <div class="box-episodio">
-                Classificar este título
-                temporada 1:E1
-                Episodios e mais
-                Idioma e legendas
-                + Adicionar à Minha lista
-            </div>
+                <button class="botao-infor">
+
+                    <i class="fas fa-thumbs-up"></i>
+                    Classificar este titulo</button>
+                <button class="botao-infor">
+                    <i class="fas fa-play"></i>
+                    Temporada 1E:1
+                </button>
+                <button class="botao-infor">
+                    <i class="fas fa-clone"></i>
+                    Episodios e mais
+                </button>
+                <button class="botao-infor">
+                    <i class="fas fa-globe"></i>
+                    Idioma e legendas
+                </button>
+                <button class="botao-infor">
+                    <i class="fas fa-plus"></i>
+                    Adicionar a minha lista
+                </button>
+            </div>-->
         </div>
     </div>
     <script>
@@ -111,8 +129,8 @@
             close(){
                 document.querySelector('.container-info').classList.remove('active')
             },
-            redirect(){
-                window.open('https://www.youtube.com/watch?v=8QnMmpfKWvo')
+            notification() {
+                alert("EM DENSENVOLMENTO...")
             }
         }
     </script>
